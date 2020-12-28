@@ -89,11 +89,37 @@ function createSchedule(e) {
   });
 
 }
-const test = document.querySelector("#friday-delete");
-test.addEventListener("click", function(e){
+const monDel = document.querySelector("#monday-delete");
+monDel.addEventListener("click", function(e){
   e.preventDefault()
     deleteSchedule();
 })
+
+const tuesDel = document.querySelector("#tuesday-delete");
+tuesDel.addEventListener("click", function(e){
+  e.preventDefault()
+    deleteSchedule();
+})
+
+const wedDel = document.querySelector("#wednesday-delete");
+wedDel.addEventListener("click", function(e){
+  e.preventDefault()
+    deleteSchedule();
+})
+
+const thurDel = document.querySelector("#thursday-delete");
+thurDel.addEventListener("click", function(e){
+  e.preventDefault()
+    deleteSchedule();
+})
+
+const friDel = document.querySelector("#friday-delete");
+friDel.addEventListener("click", function(e){
+  e.preventDefault()
+    deleteSchedule();
+})
+
+
 
 function deleteSchedule(id) {
   const scheduleId = parseInt(
