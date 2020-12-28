@@ -14,7 +14,6 @@ class SchedulesController < ApplicationController
   # POST /schedules
   def create
     #if statement using childId - should be associated with a childID to be created. 
-    # byebug
     # if params [:child_id]
     #   @child = Child.find_by(child_id: params[:child_id])
     #   @schedule = @child.schedules.build(schedule_params)
