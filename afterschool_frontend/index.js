@@ -89,10 +89,18 @@ function createSchedule(e) {
   });
 
 }
+const test = document.querySelector("#friday-delete");
+test.addEventListener("click", function(e){
+  e.preventDefault()
+    deleteSchedule();
+})
 
 function deleteSchedule(id) {
-  debugger;
-  fetch(`${BASE_URL}/schedules/${id}`, {
+  const scheduleId = parseInt(
+    event.target.parentElement.parentElement.parentElement.id);
+    // debugger;
+  const scheduleModal = document.getElementById("new-schedule-form");
+  fetch(`${BASE_URL}/schedules/1`, {
     method: "DELETE",
     headers: { "Content-Type": "application/json",}
   })
@@ -103,5 +111,4 @@ function deleteSchedule(id) {
     });
 
     //  selectTables.addEventListener("click", deleteSchedule(id))
-
-}
+  }

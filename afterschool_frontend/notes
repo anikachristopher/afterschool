@@ -515,6 +515,9 @@ const cancelSchedule = document.querySelector("#cancel-schedule")
             <br>
             <br>
             <br>
+
+
+             //  selectTables.addEventListener("click", deleteSchedule(id))
           
 
     
