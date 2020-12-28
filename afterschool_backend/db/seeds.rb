@@ -12,18 +12,11 @@ malik = Child.create(name: "Malik", age: "9", grade: "fourth")
 malik.schedules.create([
     {weekday: "Monday", subject: "Math", content: "Completed chapter 1 of Go Math"},
     {weekday: "Monday", subject: "Reading", content: "Completed chapter 1 of Lost"},
-    {weekday: "Monday", subject: "Creative Writing", content: "Wrote a story about my favorite things to eat"},
     {weekday: "Tuesday", subject: "Math", content: "Completed chapter 2 of Go Math"},
-    {weekday: "Tuesday", subject: "Reading", content: "Read chapter 2 of Lost"},
     {weekday: "Tuesday", subject: "Creative Writing", content: "Wrote a summary aboout chapter 2 of Lost"},
-    {weekday: "Wednesday", subject: "Math", content: "Practiced mental math with multiplication"},
     {weekday: "Wednesday", subject: "Reading", content: "Read chapter 3 & 4 of Lost"},
     {weekday: "Wednesday", subject: "Creative Writing", content: "Wrote 5 paragraphs using 5 words from my Word Search book"},
     {weekday: "Thursday", subject: "Math", content: "Completed chapter 3 of Go Math"},
-    {weekday: "Thursday", subject: "Reading", content: "Read chapter 5 of Lost"},
-    {weekday: "Thursday", subject: "Creative Writing", content: "Wrote a summary aboout chapter 5 of Lost"},
-    {weekday: "Friday", subject: "Math", content: "Practiced mental math with division"},
-    {weekday: "Friday", subject: "Reading", content: "Read chapter 6 & 7 of Lost"},
     {weekday: "Friday", subject: "Creative Writing", content: "Wrote 5 paragraphs using 5 words from my Word Search book"},
 
 
