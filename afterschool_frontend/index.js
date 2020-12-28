@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   addNewSchedule();
   // selectTables();
   const submitSchedule = document.querySelector("#create-schedule-button")
-  const cancelSchedule = document.querySelector("#cancel-schedule")
+  // const cancelSchedule = document.querySelector("#cancel-schedule")
   submitSchedule.addEventListener('submit', e => createSchedule(e))
   
 });
@@ -29,19 +29,6 @@ function fetchSchedules() {
         newScheduleCard.renderSchedule();
       });
     });
-}
-
-function selectTables() {
-  mon = document.getElementById("monday-delete");
-  tues = document.getElementById("tuesday-delete");
-  wed = document.getElementById("wednesday-delete");
-  thur = document.getElementById("thursday-delete");
-  fri = document.getElementById("friday-delete");
-  mon.addEventListener("click", deleteSchedule);
-  tues.addEventListener("click", deleteSchedule);
-  wed.addEventListener("click", deleteSchedule);
-  thur.addEventListener("click", deleteSchedule);
-  fri.addEventListener("click", deleteSchedule);
 }
 
 function addNewSchedule() {
@@ -104,15 +91,17 @@ function createSchedule(e) {
 }
 
 function deleteSchedule(id) {
-  // debugger;
+  debugger;
   fetch(`${BASE_URL}/schedules/${id}`, {
-    type: "DELETE",
-    headers: { "Content-Type": "application/json" },
+    method: "DELETE",
+    headers: { "Content-Type": "application/json",}
   })
     .then((resp) => resp.json())
     .then(schedule => { 
       // document.getElementById(`${id}`).innerHTML = "";
-      document.getElementById(`${schedule.id}`.delete());
+      document.getElementById(`${id}`.delete());
     });
+
+    //  selectTables.addEventListener("click", deleteSchedule(id))
 
 }

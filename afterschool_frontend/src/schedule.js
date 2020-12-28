@@ -48,17 +48,22 @@ class Schedule{
                   <p>Delete</p></button></td></tr>`
               break;
         }
-      // let mondayDelete = document.getElementById("monday-delete");
-      // let tuesdayDelete = document.getElementById("tuesday-delete");
-      // let wednesdayDelete = document.getElementById("wednesday-delete");
-      // let thursdayDelete = document.getElementById("thursday-delete");
-      // let fridayDelete = document.getElementById("friday-delete");
-      // mondayDelete.addEventListener("click", deleteSchedule);
-      // tuesdayDelete.addEventListener("click", deleteSchedule);
-      // wednesdayDelete.addEventListener("click", deleteSchedule);
-      // thursdayDelete.addEventListener("click", deleteSchedule);
-      // fridayDelete.addEventListener("click", deleteSchedule);
+      // this.selectTables()
     }
+
+   selectTables() {
+      mon = document.getElementById("monday-delete");
+      tues = document.getElementById("tuesday-delete");
+      wed = document.getElementById("wednesday-delete");
+      thur = document.getElementById("thursday-delete");
+      fri = document.getElementById("friday-delete");
+      mon.addEventListener("click", deleteSchedule);
+      tues.addEventListener("click", deleteSchedule);
+      wed.addEventListener("click", deleteSchedule);
+      thur.addEventListener("click", deleteSchedule);
+      fri.addEventListener("click", deleteSchedule);
+    }
+
   }
     
 

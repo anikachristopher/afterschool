@@ -491,6 +491,32 @@ function ShowScheduleModal() {
 
 const cancelSchedule = document.querySelector("#cancel-schedule")
 
+<label for="children">Your name:</label>
+
+            <select name="name" id="name">
+              <option value="malik">Malik</option>
+              <option value="john">John</option>
+              <option value="amanda">Amanda</option>
+            </select>
+            <label for="children">Age:</label>
+
+            <select name="age" id="age">
+              <option value="9">9</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+            </select>
+            <label for="children">Grade:</label>
+
+            <select name="grade" id="grade">
+              <option value="fourth">fourth</option>
+              <option value="third">third</option>
+            </select>
+            
+            <br>
+            <br>
+            <br>
+          
+
     
 
     
