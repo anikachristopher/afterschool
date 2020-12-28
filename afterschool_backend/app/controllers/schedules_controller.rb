@@ -15,12 +15,12 @@ class SchedulesController < ApplicationController
   def create
     #if statement using childId - should be associated with a childID to be created. 
     # byebug
-    if params [:child_id]
-      @child = Child.find_by(child_id: params[:child_id])
-      @schedule = @child.schedules.build(schedule_params)
-    # @schedule = Schedule.new(schedule_params)
+    # if params [:child_id]
+    #   @child = Child.find_by(child_id: params[:child_id])
+    #   @schedule = @child.schedules.build(schedule_params)
+    @schedule = Schedule.new(schedule_params)
     if @schedule.save
-      render json: ScheduleSerializer.new(schedule).serialized_json
+      render json: ScheduleSerializer.new(@schedule).serialized_json
     else
       render json: @schedule.errors, status: :unprocessable_entity
     end
@@ -44,7 +44,6 @@ class SchedulesController < ApplicationController
     def schedule_params
       params.require(:schedule).permit(:weekday, :subject, :content, :child_id)
     end
-  end
 end
 
 
