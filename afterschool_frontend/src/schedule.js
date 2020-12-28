@@ -7,8 +7,7 @@ class Schedule{
         this.child_id = child_id
         // creating and initializing objects of this class
     }
-  }
-    function renderSchedule(){
+    renderSchedule(){
 // debugger;
         let mondayArea = document.getElementById("monday-table"); 
         let tuesdayArea = document.getElementById("tuesday-table"); 
@@ -49,16 +48,17 @@ class Schedule{
                   <p>Delete</p></button></td></tr>`
               break;
         }
-      let mondayDelete = document.getElementById("monday-delete");
-      let tuesdayDelete = document.getElementById("tuesday-delete");
-      let wednesdayDelete = document.getElementById("wednesday-delete");
-      let thursdayDelete = document.getElementById("thursday-delete");
-      let fridayDelete = document.getElementById("friday-delete");
-      mondayDelete.addEventListener("click", deleteSchedule);
-      tuesdayDelete.addEventListener("click", deleteSchedule);
-      wednesdayDelete.addEventListener("click", deleteSchedule);
-      thursdayDelete.addEventListener("click", deleteSchedule);
-      fridayDelete.addEventListener("click", deleteSchedule);
+      // let mondayDelete = document.getElementById("monday-delete");
+      // let tuesdayDelete = document.getElementById("tuesday-delete");
+      // let wednesdayDelete = document.getElementById("wednesday-delete");
+      // let thursdayDelete = document.getElementById("thursday-delete");
+      // let fridayDelete = document.getElementById("friday-delete");
+      // mondayDelete.addEventListener("click", deleteSchedule);
+      // tuesdayDelete.addEventListener("click", deleteSchedule);
+      // wednesdayDelete.addEventListener("click", deleteSchedule);
+      // thursdayDelete.addEventListener("click", deleteSchedule);
+      // fridayDelete.addEventListener("click", deleteSchedule);
     }
+  }
     
 
