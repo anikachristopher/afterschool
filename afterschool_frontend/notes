@@ -489,7 +489,7 @@ function ShowScheduleModal() {
   addScheduleModal.addEventListener("submit", createSchedule);
 }
 
-
+const cancelSchedule = document.querySelector("#cancel-schedule")
 
     
 
